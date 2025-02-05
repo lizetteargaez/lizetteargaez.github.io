@@ -1,0 +1,529 @@
+@font-face 
+{
+    font-family: "font1";
+    src: url("resources/Blob V1.otf") format("truetype");
+}
+@font-face 
+{
+    font-family: "font2";
+    src: url("resources/calisto-mt.ttf") format("truetype");
+}
+@font-face 
+{
+    font-family: "font3";
+    src: url("resources/calisto-mt-italic.ttf") format("truetype");
+}
+@font-face 
+{
+    font-family: "font4";
+    src: url("resources/InstrumentSerif-Italic.ttf") format("truetype");
+}
+@font-face 
+{
+    font-family: "font5";
+    src: url("resources/InstrumentSerif-Regular.ttf") format("truetype");
+}
+@font-face 
+{
+    font-family: "font6";
+    src: url("resources/arial_black.ttf") format("truetype");
+}
+@font-face 
+{
+    font-family: "font7";
+    src: url("resources/SnellRoundhand.ttc") format("truetype");
+}
+.blob
+{
+    font-family: "font1";   
+}
+.calisto
+{
+    font-family: "font2";
+}
+.calisto_italic
+{
+    font-family: "font3";
+}
+.instrument_serif_italic
+{
+    font-family: "font4";
+}
+.instrument_serif_regular
+{
+    font-family: "font5";
+}
+.arial_black
+{
+    font-family: "font6";
+}
+.snell_round_hand
+{
+    font-family: "font7";
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background: #ffffff;
+    font-size: 10pt;
+    margin: 0;
+    letter-spacing: -0.25pt;
+}
+.menu
+{
+    width: auto;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 1%;
+}
+.menu a:hover
+{
+    background: #fcfeb8;
+}
+.menu .contact
+{
+    position: fixed;
+    width:fit-content;
+    color: black;
+    text-decoration: none;
+    margin-left: 10%;
+    transition: all 0.4s linear;
+}
+.menu .section
+{
+    margin-left: 75%;
+}
+.menu .section .e1
+{
+    display: block;
+    width:fit-content;
+    color: black;
+    text-decoration: none;
+    transition: all 0.4s linear;
+}
+.main
+{
+    margin-top: 10%;
+}
+.main .home .welcome
+{
+    margin-left: 10%;
+    margin-bottom: 10px;
+    width: 350px;
+}
+.home .intro
+{
+    margin: 0% 15% 10px 6%;
+}
+.main .home .intro .t0
+{
+    margin: 0;
+}
+.main .home .intro .t1
+{
+    margin: 0% 0% 0% 5%;
+}
+.main .home .language-container
+{
+    margin: 0 0 0 10%;
+    width: fit-content;
+    background-image: url('images/es1.png');
+    background-repeat: no-repeat;
+    background-size: 270px;
+    transition: background-image 0.2s;
+}
+.main .home .language-container:hover
+{
+    background-image: url(images/es0.png);
+    font-weight: bold;
+}
+.main .home .language-container a
+{
+    text-decoration: none;
+}
+.main .home .language-container p
+{
+    margin: 0;
+    padding-left: 74px;
+    padding-top: 160px;
+    width: 270px;
+    color: black;
+    text-align: bottom;
+    letter-spacing: 1pt;
+}
+/* FIRST PAGE ***************************************/
+.main .first_page
+{
+    margin-left: 10%;
+    padding-top: 30%;
+    padding-bottom: 20%;
+    display: flex;
+}
+.main .first_page .decoration img
+{
+    position: absolute;
+    width: 150px;
+    padding: 80px 0 0 80px;
+}
+.main .first_page .container
+{
+    width: 340px;
+}
+.main .first_page .container .intro
+{
+    font-size: 12pt;
+    margin: 0px 0px 3px 5px;
+}
+.main .first_page .container .title
+{
+    font-size: 45pt;
+    letter-spacing: -3pt;
+    text-align: left;
+    line-height: 35pt;
+    margin: 0;
+}
+.main .first_page .container .details
+{
+    margin: 20px 0 0 4px;
+    width: 195px;
+    text-align: justify;
+}
+.main .first_page img
+{
+    width: 500px;
+}
+/* SECOND PAGE **************************************/
+.main .second_page
+{
+    display: flex;    
+    padding-top: 10%;
+    margin: 0 0 0 50%;
+    width: fit-content;
+}
+.main .second_page img
+{
+    position: absolute;
+    width: 350px;
+    margin: 0 0 0 170px;
+}
+.main .second_page .number p
+{
+    font-size: 25pt;
+    margin: 78px 10px 0 0;
+}
+.main .second_page .container
+{
+    margin-top: 60px;
+}
+.main .second_page .title1
+{
+    font-size: 37pt;
+    margin: 0;
+    width: 220px;
+    letter-spacing: -2pt;
+    height: 45px;
+}
+.main .second_page .title2
+{
+    font-size: 37pt;
+    margin: 0;
+    width: 220px;
+    text-align: right;
+    letter-spacing: -2pt;
+}
+.main .second_page .content
+{
+    width: 230px;
+    margin: 0 0 20px 0px;
+}
+.main .second_page .date
+{
+    width: 230px;
+    text-align: right;
+    letter-spacing: 1pt;
+    font-size: 6pt;
+    margin: 0;
+}
+/* THIRD PAGE ***************************************/
+.main .third_page
+{
+    padding-top: 30%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.main .third_page .content_0
+{
+    width: 230px;
+}
+.main .third_page .content_0 .title1
+{
+    font-size: 27pt;
+    height: 35px;
+}
+.main .third_page .content_0 .title2
+{
+    font-size: 19.5pt;
+    letter-spacing: -2pt;
+    margin-bottom: 10px;
+}
+.main .third_page .content_0 p
+{
+    width: 100%;
+    font-size: 12pt;
+    margin: 0;
+    text-align: justify;
+}
+.main .third_page img
+{
+    margin: 0 0 0 20px;
+    width: 450px;
+}
+/* FOURTH PAGE **************************************/
+.main .fourth_page
+{
+    padding-top: 30%;
+    margin: 0 0 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1220px;
+    height: fit-content;
+    justify-content: space-between;
+}
+.main .fourth_page img
+{
+    width: 600px;
+    margin-top: 15px;
+}
+/* FIFTH PAGE ***************************************/
+.main .fifth_page
+{
+    margin-left: 10%;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    display: flex;
+}
+.main .fifth_page .decoration img
+{
+    position: relative;
+    z-index: 2;
+    width: 150px;
+    padding: 80px 0 0 155px;
+}
+.main .fifth_page .container
+{
+    position: absolute;
+    z-index: 1;
+    width: 460px;
+    padding-top: 94px;
+}
+.main .fifth_page .container .intro
+{
+    font-size: 12pt;
+    margin: 0px 0px 3px 5px;
+}
+.main .fifth_page .container .title
+{
+    font-size: 45pt;;
+    letter-spacing: -3pt;
+    text-align: left;
+    line-height: 35pt;
+    margin: 0;
+}
+.main .fifth_page .container .details
+{
+    margin: 20px 0 0 4px;
+    width: 195px;
+    text-align: justify;
+}
+.main .fifth_page img
+{
+    position: relative;
+    padding: -0 0 0 50px;
+    z-index: 0;
+    width: 300px;
+}
+/* SIXTH PAGE ***************************************/
+.main .sixth_page
+{
+    padding-top: 5.2%;
+    display: flex;    
+    margin: 0 0 0 50%;
+    width: fit-content;
+}
+.main .sixth_page img
+{
+    position: absolute;
+    width: 350px;
+    margin: 0 0 0 150px;
+}
+.main .sixth_page .number p
+{
+    font-size: 25pt;
+    margin: 168px 10px 0 0;
+}
+.main .sixth_page .container
+{
+    margin-top: 150px;
+}
+.main .sixth_page .title1
+{
+    font-size: 37pt;
+    margin: 0;
+    width: 120px;
+    letter-spacing: -2pt;
+    height: 45px;
+}
+.main .sixth_page .title2
+{
+    font-size: 37pt;
+    margin: 0;
+    width: 120px;
+    text-align: right;
+    letter-spacing: -2pt;
+}
+.main .sixth_page .content
+{
+    width: 220px;
+    margin: 0 0 20px 0px;
+}
+.main .sixth_page .date
+{
+    width: 230px;
+    text-align: right;
+    letter-spacing: 1pt;
+    font-size: 6pt;
+    margin: 0;
+}
+/* SEVENTH PAGE *************************************/
+.main .seventh_page
+{
+    padding-top: 30%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.main .seventh_page .content_0
+{
+    width: 230px;
+}
+.main .seventh_page .content_0 .mini_container
+{
+    display: flex;
+    height: 35px;
+    width: fit-content;
+}
+.main .seventh_page .content_0 .mini_container .title1
+{
+    font-size: 27pt;
+    width: fit-content;    
+}
+.main .seventh_page .content_0 .mini_container .title2
+{
+    font-size: 19.5pt;
+    letter-spacing: -1pt;
+    margin: 0;
+    width: fit-content;
+    margin: 10px 0 0 7px;    
+}
+.main .seventh_page .content_0 .title3
+{
+    font-size: 19.5pt;
+    letter-spacing: -1pt;
+    margin-bottom: 10px;
+}
+.main .seventh_page .content_0 p
+{
+    width: 100%;
+    font-size: 12pt;
+    margin: 0;
+    text-align: justify;
+}
+.main .seventh_page img
+{
+    margin: 0 0 0 20px;
+    width: 450px;
+}
+/* EIGHTH PAGE **************************************/
+.main .eigth_page
+{
+    padding-top: 30%;
+    margin: 0 0 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1220px;
+    height: fit-content;
+    justify-content: space-between;
+}
+.main .eigth_page img
+{
+    width: 600px;
+    margin-top: 15px;
+}
+/* NINTH PAGE **************************************/
+.main .ninth_page
+{
+    display: flex;    
+    padding-top: 30%;
+    margin: 0 0 0 50%;
+    width: fit-content;
+}
+.main .ninth_page .nos_1
+{
+    position: absolute;
+    width: 265px;
+    margin: 0 0 0 40px;
+}
+.main .ninth_page .number p
+{
+    font-size: 25pt;
+    margin: 188px 10px 0 0;
+}
+.main .ninth_page .container
+{
+    margin-top: 170px;
+}
+.main .ninth_page .title1
+{
+    font-size: 37pt;
+    margin: 0;
+    width: 220px;
+    letter-spacing: -3.2pt;
+    height: 45px;
+}
+.main .ninth_page .title2
+{
+    font-size: 37pt;
+    margin: 0;
+    width: 220px;
+    letter-spacing: -2pt;
+}
+.main .ninth_page .content
+{
+    width: 280px;
+    text-align: justify;
+    margin: 5px 0 20px 0px;
+}
+.main .ninth_page .date
+{
+    width: 280px;
+    text-align: right;
+    letter-spacing: 1pt;
+    font-size: 6pt;
+    margin: 0;
+}
+.main .ninth_page .nos_2
+{
+    width: 170px;
+}
+/* TENTH PAGE **************************************/
+.main .tenth_page
+{
+    padding-top: 30%;
+    margin: 0 0 0 5%;
+}
